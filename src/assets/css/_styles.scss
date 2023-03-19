@@ -1,0 +1,51 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-vue/src/index.scss";
+@import "./animation.scss";
+
+$base-background: #1d1d1d;
+$base-textcolor: #fdfdfd;
+$primary-color: #F9D342;
+$secondary-color: #ff0854;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: $base-background;
+  color: $base-textcolor;
+  font-family: "Cabin", sans-serif;
+  text-rendering: optimizeLegibility;
+  a,
+  p, input, textarea, select, button {
+    font-family: "Open Sans", sans-serif;
+  }
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+  a:hover, a:focus {
+    color: $primary-color;
+    text-decoration: none;
+  }
+  ul,
+  li {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  h1:hover {
+    -webkit-animation: jello-vertical 0.9s both !important;
+    animation: jello-vertical 0.9s both !important;
+  }
+}
